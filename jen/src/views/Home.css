@@ -1,15 +1,59 @@
 .home-container {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
+  text-align: center;
+  margin-top: 75px;
+  width: 100%; /* Adjust the width as needed */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+  position: relative;
+  z-index: 1;
+  background-color: #333;
+}
+
+.home-image-container {
+  position: relative;
+  display: inline-block; /* Ensure block level display */
+}
+
+.home-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.home-text {
+  position: absolute;
+  top: 40%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: white;
+  width: 40%;
+  opacity: 0; /* Initially hide the text */
+  transition: opacity 0.5s ease; /* Apply transition effect */
+}
+
+.home-text.show {
+  opacity: 1; /* Show the text */
+}
+
+.home-content {
+  font-size: 30px;
+  text-align: left;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.home-title {
+  font-size: 50px;
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif; /* Apply bold font */
+  font-weight: 700;
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
   .home-title {
-    font-size: 24px;
-    color: #333;
+    font-size: 20px;
   }
-  
+
   .home-content {
-    font-size: 16px;
-    color: #666;
+    font-size: 14px;
   }
-  
+}

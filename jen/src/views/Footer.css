@@ -1,0 +1,55 @@
+.footer {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative; /* Ensure the footer stays fixed at the bottom */
+  bottom: 0; /* Position at the bottom of the viewport */
+  left: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px; /* Add margin bottom to create space between the links and the bottom section */
+}
+
+.footer-links a {
+  margin-right: 20px;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:last-child {
+  margin-right: 0;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo img {
+  height: 25px;
+  width: auto;
+  margin-right: 5px; /* Add margin-right to create space between the logo and the copyright text */
+}
+
+.footer-copyright p {
+  margin: 0;
+  font-size: 15px;
+  color: white;
+}
+
+/* Media query for mobile devices */
+@media screen and (min-width: 600px) {
+  .footer {
+    position: relative; /* Reset to normal flow for larger screens */
+  }
+}

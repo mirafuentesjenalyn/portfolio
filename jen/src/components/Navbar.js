@@ -1,7 +1,7 @@
 // Navbar.js
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaHome, FaUser, FaTools, FaPhone } from 'react-icons/fa'; // Importing FontAwesome icons
+// import { FaHome, FaUser, FaTools, FaPhone } from 'react-icons/fa'; // Importing FontAwesome icons
 import '../views/Navbar.css';
 
 function Navbar() {
@@ -46,10 +46,10 @@ function Navbar() {
       </div>
       <ul className={`navbar-links ${isOpen ? 'open' : ''}`} onClick={(e) => e.stopPropagation()}>
         {/* Use icons before each link */}
-        <li><Link to="/" onClick={closeSidebar} className={location.pathname === '/' ? 'active' : ''}>{isOpen && <FaHome />} Home</Link></li>
-        <li><Link to="/profile" onClick={closeSidebar} className={location.pathname === '/profile' ? 'active' : ''}>{isOpen && <FaUser />} Profile</Link></li>
-        <li><Link to="/services" onClick={closeSidebar} className={location.pathname === '/services' ? 'active' : ''}>{isOpen && <FaTools />} Services</Link></li>
-        <li><Link to="/contact" onClick={closeSidebar} className={location.pathname === '/contact' ? 'active' : ''}>{isOpen && <FaPhone />} Contact</Link></li>
+        <li><Link to="/" onClick={closeSidebar} className={location.pathname === '/' ? 'active' : ''}> Home</Link></li>
+        <li><Link to="/profile" onClick={closeSidebar} className={location.pathname === '/profile' ? 'active' : ''}> Profile</Link></li>
+        <li><Link to="/services" onClick={closeSidebar} className={location.pathname === '/services' ? 'active' : ''}> Services</Link></li>
+        <li><Link to="/contact" onClick={closeSidebar} className={location.pathname === '/contact' ? 'active' : ''}> Contact</Link></li>
       </ul>
     </nav>
   );

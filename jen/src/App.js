@@ -6,6 +6,8 @@ import Home from './components/Home';
 import Profile from './components/Profile';
 import Services from './components/Services';
 import Contact from './components/Contact';
+import Footer from './components/Footer'; 
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
           <Route path="/services" element={<Services />} /> {/* Use element prop instead of component */}
           <Route path="/contact" element={<Contact />} /> {/* Use element prop instead of component */}
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
