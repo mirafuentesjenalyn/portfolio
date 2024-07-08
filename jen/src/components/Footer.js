@@ -14,7 +14,7 @@ const Footer = () => {
           <img src="/logo.png" alt="logo" />
         </div>
         <div className="footer-copyright">
-          <p>© 2024 JM | Portfolio</p>
+          <p> Copyright © 2024 JM | Portfolio</p>
         </div>
       </div>
     </div>

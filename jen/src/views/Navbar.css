@@ -2,12 +2,12 @@
     background-color: #333;
     padding: 15px 20px;
     display: flex;
-    align-items: center; /* Align items vertically */
-    width: 100%; /* Ensure the navbar spans the entire width */
-    position: fixed; /* Make the navbar fixed */
-    top: 0; /* Position the navbar at the top of the viewport */
-    left: 0; /* Position the navbar at the left of the viewport */
-    z-index: 1000; /* Set a high z-index to ensure the navbar is above other content */
+    align-items: center;
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
 }
 
 
@@ -15,7 +15,7 @@
     height: 40px;
     width: auto;
     margin-left: 10px;
-    margin-right: 20px; /* Add spacing between logo and links */
+    margin-right: 20px; 
 }
 
 .navbar-toggle {
@@ -45,21 +45,13 @@
     text-decoration: none;
 }
 
-.navbar-links li svg {
-    fill: #ffffff; 
-    margin-right: 3px; 
-    width: 18px; 
-    height: 18px; 
-}
-
 .navbar-links li a.active {
-    color: skyblue; /* Change the color of the active link */
-    font-weight: bold; /* Make the active link bold */
+    color: skyblue;
 }
 
-/* Change icon color to skyblue when its parent link is active */
-.navbar-links li a.active svg {
-    fill: skyblue;
+.navbar-links li a:hover {
+    color: skyblue;
+    font-weight: bold;
 }
 
 /* Media query for responsive design */
@@ -74,11 +66,12 @@
         flex-direction: column;
         background-color: rgba(51, 51, 51, 0.9);
         position: absolute;
-        top: 0;
+        top: 75px;
         left: 0;
         width: 150px; /* Set width for the sidebar */
         padding: 75px; /* Add padding for spacing */
-        padding-top: 90px;
+        padding-top: 30px;
+        padding-right: 40px;
         padding-bottom: 100%;
         overflow-y: overlay;
         align-items: flex-start; /* Align items to the left */
@@ -91,7 +84,7 @@
         color: #fff;
         font-size: 20px;
         order: 1; 
-        transition: transform 0.5s ease;
+        transition: transform 0.5s ease, color 0.3s ease; 
         outline: none;
     }
 
@@ -111,20 +104,14 @@
         text-decoration: none;
     }
 
-    .navbar-links li a.active {
-        color: skyblue; /* Change the color of the active link */
-        font-weight: bold; /* Make the active link bold */
+    .navbar-links li a:hover {
+        color: skyblue;
+        font-weight: bold;
     }
 
-    /* Adjust top space for the Home link */
-    .navbar-links li:first-child {
-        margin-top: 20px; /* Adjust the top margin as needed */
-    }
-
-    /* Style icons */
-    .navbar-links li svg {
-        fill: #fff; /* Set icon color to white */
-        margin-right: 5px; /* Add spacing between icon and link text */
+    .navbar-toggle:hover {
+        color: skyblue;
+        font-weight: bold;
     }
 
     .navbar-logo {

@@ -1,7 +1,5 @@
-// Navbar.js
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-// import { FaHome, FaUser, FaTools, FaPhone } from 'react-icons/fa'; // Importing FontAwesome icons
 import '../views/Navbar.css';
 
 function Navbar() {
@@ -32,7 +30,8 @@ function Navbar() {
     };
   }, [isOpen]);
 
-  const closeSidebar = () => {
+  const closeSidebar = (e) => {
+    e.stopPropagation();
     setIsOpen(false);
   };
 

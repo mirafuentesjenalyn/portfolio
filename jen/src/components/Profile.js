@@ -1,12 +1,12 @@
 import React from 'react';
-import Footer from './Footer';
-
+import { Link } from 'react-router-dom';
 
 function Profile() {
   return (
-    <div>
+    <div classname="aboutme-containr">
       <h2>Welcome to My Website!</h2>
       <p>This is the profile of my website.</p>
+      <p><Link to="/profile"> Go to Profile </Link></p>
     </div>
     
   );
