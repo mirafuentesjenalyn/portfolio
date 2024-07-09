@@ -1,16 +1,14 @@
 .home-container {
   text-align: center;
-  margin-top: 75px;
   width: 100%; /* Adjust the width as needed */
   box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
   position: relative;
   z-index: 1;
-  /* background-color: #333; */
 }
 
 .home-image-container {
   position: relative;
-  display: inline-block; /* Ensure block level display */
+  display: inline-block; 
 }
 
 .home-image {
@@ -20,6 +18,7 @@
 
 .home-text {
   position: absolute;
+  margin-top: 8%;
   top: 40%;
   left: 65%;
   transform: translate(-50%, -50%);
@@ -54,10 +53,43 @@
 }
 
 .underline {
-  background-color: #2a49ae;
+  background-color: #632aae;
   height: 3px;
   width: 100px;
   margin: 1rem auto;
+}
+
+.aboutme-text {
+  background: linear-gradient(135deg, rgb(255, 53, 110), #4d9aff, #0263be);
+  padding: 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.53);
+  text-align: center;
+  width: 70%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  margin: 1rem auto;
+  font-size: 25px;
+  color: white;
+}
+
+.aboutme-text p {
+  margin: 0;
+}
+
+.styled-text {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.styled-highlight {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #69fff5;
+  ;
 }
 
 /* For mobile devices */
@@ -68,5 +100,13 @@
 
   .home-content {
     font-size: 14px;
+  }
+  
+  .aboutme-text {
+    width: 90%; /* Adjust the width for smaller screens */
+    height: auto; /* Adjust the height for smaller screens */
+    font-size: 20px; /* Adjust the font size for smaller screens */
+    padding-left: 15px; /* Adjust padding for smaller screens */
+    padding-right: 15px; /* Adjust padding for smaller screens */
   }
 }

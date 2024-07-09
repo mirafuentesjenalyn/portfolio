@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #333;
+    background: linear-gradient(135deg, rgba(255, 0, 102, 0.742), #0095f154);
     padding: 15px 20px;
     display: flex;
     align-items: center;
@@ -50,7 +50,7 @@
 }
 
 .navbar-links li a:hover {
-    color: skyblue;
+    color: #380878;
     font-weight: bold;
 }
 
@@ -64,7 +64,7 @@
     .navbar-links.open {
         display: flex; /* Show navbar links when the menu is opened */
         flex-direction: column;
-        background-color: rgba(51, 51, 51, 0.9);
+        background: linear-gradient(135deg, rgba(255, 0, 102, 0.742), #0095f154);
         position: absolute;
         top: 75px;
         left: 0;
@@ -105,12 +105,12 @@
     }
 
     .navbar-links li a:hover {
-        color: skyblue;
+        color: #380878;
         font-weight: bold;
     }
 
     .navbar-toggle:hover {
-        color: skyblue;
+        color: #380878;
         font-weight: bold;
     }
 
